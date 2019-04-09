@@ -1,0 +1,18 @@
+﻿@section heads
+{
+    <link href="@Url.Content("https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css")"
+          rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf8" src="@Url.Content("https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js")"></script>
+}
+
+@{
+    ViewBag.Title = "Home";
+}
+
+@Html.ActionLink("Click", "Message", "Person")
+
+@Html.ActionLink("List_Of_Person", "ShowPerson", "Person")
+
+@Html.ActionLink("List_Of_Event", "ShowEvent", "Event")
+
+
