@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -19,6 +20,10 @@ namespace SouthWorks
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            string connectionString = ConfigurationManager.ConnectionStrings["SouthWorkDB"].ConnectionString;
+            System.Web.Caching.SqlCacheDependencyAdmin.EnableNotifications(connectionString);
+            System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications(connectionString, "Events");
+
         }
     }
 }

@@ -116,9 +116,7 @@
     <Content Include="obj\Debug\SouthWorks.csproj.CoreCompileInputs.cache" />
     <Content Include="Controllers\EventList.json" />
     <None Include="packages.config" />
-    <Content Include="Views\Person\Home.cshtml" />
-    <Content Include="Views\Person\Message.cshtml" />
-    <Content Include="Views\Person\ShowPerson.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Event\ShowEvent.cshtml" />
@@ -142,7 +140,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EventController.cs" />
-    <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -12,4 +12,10 @@ namespace SouthWorks.Models
         public String StartingDate { get; set; }
         public String RegistrationLink { get; set; }
     }
+
+    public class AllEvent
+    {
+        public List<Event> Items { get; set; }
+        public bool HasMoreResults { get; set; }
+    }
 }

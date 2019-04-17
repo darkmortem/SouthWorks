@@ -9,7 +9,7 @@ using System.Web.Helpers;
 
 namespace SouthWorks.Controllers
 {
-  public class PersonController : Controller
+  public class HomeController : Controller
   {
         //
         // GET: /Person/
